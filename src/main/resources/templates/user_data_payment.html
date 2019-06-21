@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<!-- localhost:8086/buybooksCCD 
+ "http://localhost:8086/userdata" 
+ th:object="${user}"
+ th:action="@{'/userdata'}" 
+ -->
+	<form th:action="@{'http://localhost:8086/userdata'}"    th:method="post">
+	
+	
+	<br/>
+<label> Emer: </label>  
+	<input type="text" name="name" class="userData"/>
+	<br/>
+	
+<label>	Mbiemer: </label>
+	<input type="text" name="lastName" class="userData"/>
+	<br/>
+	
+	<label> Qyteti: </label>
+	<input type="text" name="city" class="userData"/>
+	<br/>
+	
+	<label> Rruga: </label>
+	<input type="text" name="street" class="userData"/>
+	<br/>
+	
+	<label> Kodi postar: </label>
+	<input type="text" name="postCode" class="userData"/>
+	<br/>
+	
+	<label> tel: </label>
+	<input type="text" name="phoneNumber" class="userData"/>
+	<br/>
+	
+	<input type="submit" name="submit" value="submit" />
+	
+	</form>
+</body>
+</html>
