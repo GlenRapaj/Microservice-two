@@ -4,7 +4,7 @@ spring:
   application:
     name: bliLiber
   datasource:
-    password: pilivesa
+    password: ********
     url: jdbc:mysql://localhost:3306/user
     username: root
   jpa:
